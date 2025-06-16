@@ -15,7 +15,7 @@ export default function Button({ variant, children, type = "button", onClick }: 
     secondary: "bg-customWhite-100 text-customGray-300"
   }
   return (
-    <button className={`${variants[variant]} py-3.5 font-out w-full text-custom-16 leading-5 rounded-custom-12 cursor-pointer`} type={type} onClick={onClick}>
+    <button className={`${variants[variant]} py-3.5 font-outfit w-full text-base rounded-xl cursor-pointer`} type={type} onClick={onClick}>
       {children}
     </button>
   );

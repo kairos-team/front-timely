@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 export default function Page() {
   return (
     <>
-      <div className="w-custom-300 flex flex-col gap-5">
+      <div className="w-75 flex flex-col gap-5">
         <Button type="button" variant="primary" onClick={() => console.log("Clicou em acessar conta")}>
           Acessar conta
         </Button>

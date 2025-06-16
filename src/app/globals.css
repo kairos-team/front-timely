@@ -4,20 +4,12 @@
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-out: 'Outfit';
+  --font-outfit: 'Outfit';
 
   --color-customBlue-400: #233267;
   --color-customWhite-100: #F1F1F1;
   --color-customGray-300: #3D3D3D;
 
-  --width-custom-300: 18.75rem;
-  --height-custom-16: 1rem;
-  
-  --rounded-custom-12: 0.75rem;
-}
-
-.rounded-custom-12{
-  border-radius: var(--rounded-custom-12);
 }
 
 :root {
