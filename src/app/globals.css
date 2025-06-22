@@ -1,15 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-league-spartan: var(--font-league-spartan);
-  --font-outfit: 'Outfit';
+  --font-outfit: var(--font-outfit);
+  --font-inter: var(--font-inter);
 
+  --color-customBlue-100: #E3F3FF;
+  --color-customBlue-200: #B5D5EE;
+  --color-customBlue-300: #D0E9FD;
   --color-customBlue-400: #233267;
+
+  --color-customGreen-100: #E6FBF3;
+  --color-customGreen-200: #CEF7E8;
+  --color-customGreen-500: #39DDA2;
+  --color-customGreen-700: #0A8F5F;
+
+  --color-customNeutral-50: #FFFFFF;
+  --color-customNeutral-300: #3D3D3D;
+  --color-customNeutral-400: #68686E;
+  --color-customNeutral-500: #4B4B53;
+  --color-customNeutral-800: #0D0D0E;
+
+  --color-customRed-100: #FFEBEF;
+  --color-customRed-200: #FFD7DE;
+  --color-customRed-500: #FF607D;
+  --color-customRed-700: #B31935;
+
   --color-customWhite-100: #F1F1F1;
-  --color-customGray-300: #3D3D3D;
+
+  --color-customYellow-100: #FFF9EB;
+  --color-customYellow-100: #FFF4D7;
+  --color-customYellow-100: #FFD361;
+  --color-customYellow-100: #C0780C;
 }
 
 :root {
@@ -17,21 +41,9 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  padding: 0;
   margin: 0;
-  color: var(--foreground);
-  background: white;
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
