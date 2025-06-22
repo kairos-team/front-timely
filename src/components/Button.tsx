@@ -12,7 +12,7 @@ interface ButtonProps {
 export default function Button({ variant, children, type = "button", onClick }: ButtonProps) {
   const variants = {
     primary: "bg-customBlue-400 text-customWhite-100",
-    secondary: "bg-customWhite-100 text-customGray-300"
+    secondary: "bg-customWhite-100 text-customNeutral-300"
   }
   return (
     <button className={`${variants[variant]} py-3.5 font-outfit w-full text-base rounded-xl cursor-pointer font-medium`} type={type} onClick={onClick}>

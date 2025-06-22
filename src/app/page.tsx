@@ -9,11 +9,11 @@ export default function Page() {
   const router = useRouter()
   return (
     <>
-      <div className="w-75 h-75 flex flex-col gap-14 items-center">
+      <div className="w-75 h-full flex flex-col gap-14 items-center justify-center my-auto">
         <Image src="/images/logo.svg" alt="Logo da empresa" width={293.27} height={128} />
 
         <div className="flex flex-col w-full gap-5">
-          <Button type="button" variant="primary" onClick={() => console.log("Clicou em acessar conta")}>
+          <Button type="button" variant="primary" onClick={() => router.push("/auth/login")}>
             Acessar conta
           </Button>
           <Button type="button" variant="secondary" onClick={() => router.push("/auth/registro")}>
