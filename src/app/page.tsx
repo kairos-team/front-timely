@@ -22,7 +22,7 @@ export default function Page() {
         </div>
 
         <div className="w-full text-center">
-          <span className="text-sm font-light font-league-spartan text-[#070707] max-w-44">Para continuar, leia nossa <br /><span className="underline">Política de Privacidade.</span></span>
+          <span className="text-sm font-light font-league-spartan text-[#070707] max-w-44">Para continuar, leia nossa <br /><span className="underline cursor-pointer">Política de Privacidade.</span></span>
         </div>
       </div>
     </>

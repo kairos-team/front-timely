@@ -3,8 +3,10 @@
 import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter()
   return (
     <div className="flex flex-col items-center justify-center relative w-full h-full overflow-y-auto overflow-x-hidden">
       <Image src="/images/logo.svg" alt="Logo da empresa" width={218} height={95} className="hidden md:block absolute left-5 top-5" />
@@ -54,7 +56,7 @@ export default function Page() {
         </div>
 
         <div className="font-inter font-bold text-sm text-customNeutral-300 cursor-pointer pt-5">
-          Criar uma nova conta
+          <span onClick={() => router.push("/auth/registro")}>Criar uma nova conta</span>
         </div>
       </div>
     </div>
