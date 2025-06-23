@@ -31,7 +31,7 @@ export default function RegisterPage() {
             <div className="flex flex-col w-75">
               <InputText type="password" placeholder="Digite sua senha" />
             </div>
-            <InputText type="password" placeholder="Confimação de senha" />
+            <InputText type="password" placeholder="Confirmação de senha" />
           </div>
 
           <div className="w-75">
