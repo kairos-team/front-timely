@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter, League_Spartan, Outfit } from 'next/font/google'
+import { Inter, League_Spartan, Outfit, Urbanist } from 'next/font/google'
 
 const leagueSpartan = League_Spartan({
   weight: ['300', '400', '500', '600', '700'],
@@ -20,6 +20,12 @@ const inter = Inter({
   variable: '--font-inter'
 })
 
+const urbanist = Urbanist({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-urbanist'
+})
+
 export const metadata: Metadata = {
   title: "Projeto Timely",
   description: "Sua agenda de forma fácil",
@@ -27,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${leagueSpartan.variable} ${outfit.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`${leagueSpartan.variable} ${outfit.variable} ${inter.variable} ${urbanist.variable}`}>
       <body className="flex flex-col justify-center w-screen h-screen items-center">{children}</body>
     </html>
   );

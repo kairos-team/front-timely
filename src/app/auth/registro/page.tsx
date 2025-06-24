@@ -20,7 +20,7 @@ export default function RegisterPage() {
         <div className="absolute -right-52 -top-40 w-[500px] h-[500px] rounded-full bg-[#F8F9FF]" />
         <div className="absolute -right-2 top-1 w-[400px] h-[400px] rounded-full border-4 border-[#F8F9FF]" />
 
-        <div className="flex flex-col items-center justify-center gap-10 w-full z-50">
+        <div className="flex flex-col items-center justify-center w-full gap-10 z-50">
           <div className="flex flex-col w-full text-center">
             <h1 className="font-bold text-[32px] text-customBlue-400 font-outfit">Olá! Cadastre-se para começar</h1>
           </div>

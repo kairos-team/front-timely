@@ -6,6 +6,7 @@
   --font-league-spartan: var(--font-league-spartan);
   --font-outfit: var(--font-outfit);
   --font-inter: var(--font-inter);
+  --font-urbanist: var(--font-urbanist);
 
   --color-customBlue-100: #E3F3FF;
   --color-customBlue-200: #B5D5EE;
@@ -20,6 +21,7 @@
   --color-customGreen-700: #0A8F5F;
 
   --color-customNeutral-50: #FFFFFF;
+  --color-customNeutral-100: #F1F1F1;
   --color-customNeutral-200: #989494;
   --color-customNeutral-300: #3D3D3D;
   --color-customNeutral-400: #68686E;
@@ -37,6 +39,14 @@
   --color-customYellow-100: #FFF4D7;
   --color-customYellow-100: #FFD361;
   --color-customYellow-100: #C0780C;
+}
+
+.text-border {
+  text-shadow:
+    -1px -1px 0 var(--color-customBlue-200),
+    1px -1px 0 var(--color-customBlue-200),
+    -1px 1px 0 var(--color-customBlue-200),
+    1px 1px 0 var(--color-customBlue-200);
 }
 
 :root {
