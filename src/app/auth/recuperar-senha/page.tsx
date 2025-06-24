@@ -6,7 +6,6 @@ import InputText from "@/components/InputText";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-
 export default function PasswordRecoveryPage() {
   const router = useRouter()
   return (
@@ -24,7 +23,7 @@ export default function PasswordRecoveryPage() {
         <div className="flex flex-col items-center justify-center gap-20 z-50">
           <div className="flex flex-col text-center gap-4 w-[345px]">
             <h1 className="font-outfit font-bold text-customBlue-400 text-[32px]">Esqueceu a senha?</h1>
-            <span className="font-inter font-medium text-customNeutral-200">Não se preocupe! Isso acontece. Por favor, insira o e-mail vinculado a sua conta.</span>
+            <span className="font-inter font-medium text-customNeutral-200 text-base">Não se preocupe! Isso acontece. Por favor, insira o e-mail vinculado a sua conta.</span>
           </div>
 
           <div className="flex flex-col items-center justify-center gap-5 w-75">

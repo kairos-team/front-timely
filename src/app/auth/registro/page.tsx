@@ -38,8 +38,8 @@ export default function RegisterPage() {
             <Button variant="primary" onClick={() => console.log("Conta criada!")}> Criar Cadastro</Button>
           </div>
 
-          <div className="font-inter font-bold text-sm text-customNeutral-300 cursor-pointer pt-5">
-            Já tem uma conta? <span className="font-inter font-bold text-customBlue-400 text-sm underline" onClick={() => router.push("/auth/login")}>Acesse aqui</span>
+          <div className="font-inter font-bold text-sm text-customNeutral-300 pt-5">
+            Já tem uma conta? <span className="text-customBlue-400underline cursor-pointer" onClick={() => router.push("/auth/login")}>Acesse aqui</span>
           </div>
         </div>
       </div >
