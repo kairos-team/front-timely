@@ -4,9 +4,26 @@ import BackButton from "@/components/BackButton"
 import Button from "@/components/Button"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { useRef } from "react"
+
 
 export default function OTPVerificationPage() {
   const router = useRouter()
+  const inputRefs = useRef<Array<HTMLInputElement | null>>([])
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+    const value = e.target.value
+
+    if (value.length === 1 && inputRefs.current[index + 1]) {
+      inputRefs.current[index + 1]?.focus()
+    }
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, index: number) => {
+    if (e.key === "Backspace" && !e.currentTarget.value && inputRefs.current[index - 1]) {
+      inputRefs.current[index - 1]?.focus()
+    }
+  }
   return (
     <>
       <div className="flex flex-col items-center justify-center relative w-full h-full overflow-hidden">
@@ -27,10 +44,17 @@ export default function OTPVerificationPage() {
 
           <div className="flex flex-col items-center justify-center w-75 gap-8">
             <div className="flex flex-row gap-4 w-full h-14 font-urbanist font-bold text-customBlue-400 text-xl">
-              <input type="text" placeholder="" maxLength={1} className="text-center w-16 rounded-md border border-customBlue-200 bg-[#FFFFFF] placeholder-shown:bg-customNeutral-100 placeholder-shown:border-[#D1D1D1] text-border focus:outline-none" />
-              <input type="text" placeholder="" maxLength={1} className="text-center w-16 rounded-md border border-customBlue-200 bg-[#FFFFFF] placeholder-shown:bg-customNeutral-100 placeholder-shown:border-[#D1D1D1] text-border focus:outline-none" />
-              <input type="text" placeholder="" maxLength={1} className="text-center w-16 rounded-md border border-customBlue-200 bg-[#FFFFFF] placeholder-shown:bg-customNeutral-100 placeholder-shown:border-[#D1D1D1] text-border focus:outline-none" />
-              <input type="text" placeholder="" maxLength={1} className="text-center w-16 rounded-md border border-customBlue-200 bg-[#FFFFFF] placeholder-shown:bg-customNeutral-100 placeholder-shown:border-[#D1D1D1] text-border focus:outline-none" />
+              {[0, 1, 2, 3].map((i) => (
+                <input
+                  key={i}
+                  type="text"
+                  placeholder=""
+                  maxLength={1}
+                  ref={(el) => { inputRefs.current[i] = el }}
+                  onChange={(e) => handleChange(e, i)}
+                  onKeyDown={(e) => handleKeyDown(e, i)}
+                  className="text-center w-16 rounded-md border border-customBlue-200 bg-[#FFFFFF] placeholder-shown:bg-customNeutral-100 placeholder-shown:border-[#D1D1D1] text-border focus:outline-none" />
+              ))}
             </div>
 
             <Button variant="primary" type="button" onClick={() => router.push("/auth/criar-nova-senha")}>Verificar</Button>
