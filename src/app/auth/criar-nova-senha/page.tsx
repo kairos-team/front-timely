@@ -33,7 +33,7 @@ export default function CreateNewPasswordPage() {
               <InputText type="text" placeholder="Confirme a nova senha" />
             </div>
 
-            <Button variant="primary" type="button" onClick={() => router.push}>Cadastrar nova senha</Button>
+            <Button variant="primary" type="button" onClick={() => router.push("/auth/sucesso")}>Cadastrar nova senha</Button>
 
           </div>
 
