@@ -29,7 +29,7 @@ export default function PasswordRecoveryPage() {
 
           <div className="flex flex-col items-center justify-center gap-5 w-75">
             <InputText type="email" placeholder="Insira o seu e-mail" />
-            <Button variant="primary" type="button" onClick={() => console.log("Codigo do e-mail")}>Enviar Código</Button>
+            <Button variant="primary" type="button" onClick={() => router.push("/auth/codigo-verificacao")}>Enviar Código</Button>
           </div>
 
           <div className="flex text-center font-inter font-bold text-sm text-customNeutral-300">
