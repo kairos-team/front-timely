@@ -6,7 +6,6 @@ import InputText from "@/components/InputText";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-
 export default function PasswordRecoveryPage() {
   const router = useRouter()
   return (
