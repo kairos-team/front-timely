@@ -39,7 +39,7 @@ export default function RegisterPage() {
           </div>
 
           <div className="font-inter font-bold text-sm text-customNeutral-300 pt-5">
-            Já tem uma conta? <span className="text-customBlue-400underline cursor-pointer" onClick={() => router.push("/auth/login")}>Acesse aqui</span>
+            Já tem uma conta? <span className="text-customBlue-400underline cursor-pointer underline text-customBlue-400" onClick={() => router.push("/auth/login")}>Acesse aqui</span>
           </div>
         </div>
       </div >
