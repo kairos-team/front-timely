@@ -24,7 +24,7 @@ export default function Page() {
           <InputText type="email" placeholder="E-mail" />
           <div className="flex flex-col w-full gap-1">
             <InputText type="password" placeholder="Digite sua senha" />
-            <span className="text-end font-inter font-bold text-sm text-customBlue-400 cursor-pointer" onClick={()=> router.push("/auth/recuperar-senha")}>Esqueceu sua senha?</span>
+            <span className="text-end font-inter font-bold text-sm text-customBlue-400 cursor-pointer" onClick={() => router.push("/auth/recuperar-senha")}>Esqueceu sua senha?</span>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ export default function Page() {
             <span className="text-sm text-[#989494] font-normal font-inter">Permanecer conectado</span>
           </label>
 
-          <Button variant="primary" onClick={() => console.log("Conta criada!")}>
+          <Button variant="primary" onClick={() => router.push("/dashboard")}>
             Acessar conta
           </Button>
         </div>
