@@ -27,7 +27,7 @@ export default function DashboardPage() {
             <div className="text-left font-inter font-normal text-lg text-[#FFF9EB] w-2/3 leading-tight">
               Ótimo, você já atendeu boa parte dos pacientes!
             </div>
-            <ProgressCircle progress={82} />
+            <ProgressCircle progress={80} />
           </div>
         </div>
 
@@ -90,7 +90,7 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        <BottomMenu/>
+        <BottomMenu />
 
       </div>
     </>
