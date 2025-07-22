@@ -20,17 +20,17 @@ export default function BottomMenu() {
     {
       active: "/icons/blueCalendar.svg",
       inactive: "/icons/calendar.svg",
-      href: "/calendar"
+      href: "/agenda"
     },
     {
       active: "/icons/blueReport.svg",
       inactive: "/icons/report.svg",
-      href: "/report"
+      href: "/relatorio"
     },
     {
       active: "/icons/blueUser.svg",
       inactive: "/icons/user.svg",
-      href: "/user"
+      href: "/usuario"
     }
   ]
   return (

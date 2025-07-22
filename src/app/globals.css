@@ -7,6 +7,7 @@
   --font-outfit: var(--font-outfit);
   --font-inter: var(--font-inter);
   --font-urbanist: var(--font-urbanist);
+  --font-poppins: var(--font-poppins);
 
   --color-customBlue-100: #E3F3FF;
   --color-customBlue-200: #B5D5EE;
@@ -39,6 +40,15 @@
   --color-customYellow-100: #FFF4D7;
   --color-customYellow-100: #FFD361;
   --color-customYellow-100: #C0780C;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .text-border {
