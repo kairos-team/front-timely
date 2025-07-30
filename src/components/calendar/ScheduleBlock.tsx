@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import Image from "next/image";
+import React from "react";
 import { IoEllipsisVertical } from "react-icons/io5";
 
 interface ScheduleBlockProps {
@@ -10,7 +11,7 @@ interface ScheduleBlockProps {
   date: string;
 }
 
-export default function ScheduleBlock({
+const ScheduleBlock = React.memo(function ScheduleBlock({
   name,
   from,
   to,
@@ -63,4 +64,6 @@ export default function ScheduleBlock({
 
     </div>
   );
-}
+})
+
+export default ScheduleBlock;

@@ -35,7 +35,7 @@ export default function RegisterPage() {
           </div>
 
           <div className="w-75">
-            <Button variant="primary" onClick={() => console.log("Conta criada!")}> Criar Cadastro</Button>
+            <Button variant="primary" onClick={() => router.push("/auth/login")}> Criar Cadastro</Button>
           </div>
 
           <div className="font-inter font-bold text-sm text-customNeutral-300 pt-5">

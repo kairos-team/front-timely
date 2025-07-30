@@ -20,8 +20,8 @@ export default function useCalendar() {
 
   const visibleDays = useMemo((): Dayjs[] => {
     const days: Dayjs[] = [];
-    const start = dayjs().subtract(1, "year");
-    const end = dayjs().add(1, "year");
+    const start = dayjs().subtract(30, "day");
+    const end = dayjs().add(60, "day");
 
     const diff = end.diff(start, "day");
     for (let i = 0; i <= diff; i++) {

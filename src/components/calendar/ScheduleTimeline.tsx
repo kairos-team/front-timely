@@ -1,9 +1,9 @@
 import dayjs from "dayjs";
 import ScheduleBlock from "./ScheduleBlock";
-import { SchedulingProps } from "./SchedulingDay";
+import Schedule from "@/model/entity/Schedule";
 
 interface ScheduleTimelineProps {
-  scheduling: SchedulingProps[];
+  scheduling: Schedule[];
 }
 
 export default function ScheduleTimeline({ scheduling }: ScheduleTimelineProps) {
