@@ -47,30 +47,18 @@ export default function ScheduleTimeline({ scheduling }: ScheduleTimelineProps) 
       )}
 
       {scheduling.map((s, i) => {
+        const key = `${s.date}-${s.from}`;
         const start = dayjs(`${s.date}T${s.from}`);
         const end = dayjs(`${s.date}T${s.to}`);
         const top = (start.hour() * 60 + start.minute() - startHour * 60) * pxPerMinute;
         const height = end.diff(start, "minute") * pxPerMinute;
 
         return (
-          <div
-            key={i}
-            className="absolute left-14 right-2"
-            style={{ top: `${top}px`, height: `${height}px` }}
-          >
-
-            <ScheduleBlock
-              key={i}
-              name={s.name}
-              from={s.from}
-              to={s.to}
-              date={s.date}
-              avatars={s.avatars}
-            />
+          <div key={key} className="absolute left-14 right-2" style={{ top: `${top}px`, height: `${height}px` }}>
+            <ScheduleBlock key={i} name={s.name} from={s.from} to={s.to} date={s.date} avatars={s.avatars} />
           </div>
         );
       })}
     </div>
   );
 }
-
